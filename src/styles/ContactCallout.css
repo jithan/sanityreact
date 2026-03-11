@@ -1,0 +1,71 @@
+.contact-callout {
+  padding: 60px 20px;
+  background: #f8fafc;
+  border-radius: 0 110px 0 0;
+  margin: 2rem 0;
+}
+
+.contact-callout__content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-callout .callout-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-callout .callout-body-left {
+  flex: 0 0 31.977%;
+}
+
+.contact-callout .callout-body-right {
+  flex: 0 0 57.5321%;
+}
+
+.contact-callout__title {
+  font-size: 2.1rem;
+  margin: 0;
+  color: #0b1e49;
+}
+
+.contact-callout__description {
+  color: #1f2937;
+}
+
+.contact-callout__button {
+  display: inline-block;
+  background: #00338d;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 35px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .contact-callout {
+    border-radius: 0 70px 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-callout {
+    border-radius: 0 50px 0 0;
+  }
+  .contact-callout__content {
+    align-items: stretch;
+  }
+
+  .contact-callout .callout-body {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-callout .callout-body-left,
+  .contact-callout .callout-body-right {
+    flex: 0 0 100%;
+  }
+}
