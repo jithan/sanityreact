@@ -1,5 +1,5 @@
 .page-detail-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -36,7 +36,7 @@
 
 .page-content h2 {
   font-size: 1.8rem;
-  margin: 40px 0 20px 0;
+  margin: 30px 0 20px 0;
   color: #333;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
@@ -61,7 +61,6 @@
 .page-content a {
   color: #0066cc;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease;
 }
 

@@ -1,0 +1,96 @@
+.cta-card-panel {
+  padding: 60px 20px;
+  margin: 2rem 0;
+  border-radius: 12px;
+}
+
+.cta-card-panel--default {
+  background-color: #f8fafc;
+  color: #1f2937;
+}
+
+.cta-card-panel--grey {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.cta-card-panel--primary {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.cta-card-panel__content {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.cta-card-panel__eyebrow {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.cta-card-panel__headline {
+  margin: 0.25rem 0 1rem;
+}
+
+.cta-card-panel__description {
+  margin: 0 0 1rem;
+}
+
+.cta-card-panel__primary-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid currentColor;
+  margin-top: 0.25rem;
+}
+
+.cta-card-panel__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.cta-card-panel__card {
+  background: rgba(255,255,255,0.85);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  color: inherit;
+}
+
+.cta-card-panel--primary .cta-card-panel__card {
+  background: rgba(255,255,255,0.15);
+}
+
+.cta-card-panel__card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cta-card-panel__card-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.cta-card-panel__card-description {
+  margin-bottom: 0.75rem;
+}
+
+.cta-card-panel__card-link {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px solid;
+}

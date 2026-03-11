@@ -35,18 +35,18 @@ function Header() {
           RLTHub
         </Link>
         <ul className="nav-menu">
+           {!loading &&
+            (menuItems || []).map((item) => (
+              <li key={item._id}>
+                <Link to={`/pages/${item.slug.current}`}>{item.menuTitle || item.title}</Link>
+              </li>
+            ))}
           <li>
             <Link to="/articles">Articles</Link>
           </li>
           <li>
             <Link to="/movies">Movies</Link>
           </li>
-          {!loading &&
-            (menuItems || []).map((item) => (
-              <li key={item._id}>
-                <Link to={`/pages/${item.slug.current}`}>{item.menuTitle || item.title}</Link>
-              </li>
-            ))}
         </ul>
       </div>
     </nav>

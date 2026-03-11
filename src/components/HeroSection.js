@@ -2,10 +2,26 @@ import React from 'react';
 import '../styles/HeroSection.css';
 
 const HeroSection = ({ title, subtitle, backgroundImage, ctaText, ctaUrl, align = 'center' }) => {
-  const bgUrl = backgroundImage?.asset?.url || '';
-  if (!bgUrl && backgroundImage) {
-    console.warn('HeroSection backgroundImage missing url', backgroundImage);
-  }
+  const getBgUrl = (image) => {
+    if (!image) return '';
+    if (typeof image === 'string') return image;
+    if (image.asset?.url) return image.asset.url;
+    if (image.url) return image.url;
+
+    const ref = image.asset?._ref;
+    if (typeof ref === 'string') {
+      // sanity image ref format: image-<id>-<width>x<height>-<format>
+      const cleaned = ref
+        .replace(/^image-/, '')
+        .replace(/-([a-z]+)$/, '.$1');
+      return `https://cdn.sanity.io/images/4p1xt2z5/rlthub/${cleaned}`;
+    }
+
+    return '';
+  };
+
+  const bgUrl = getBgUrl(backgroundImage);
+
   const style = {
     textAlign: align,
     backgroundImage: bgUrl ? `url(${bgUrl})` : 'none',
