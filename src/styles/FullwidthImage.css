@@ -1,0 +1,44 @@
+.fullwidth-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.fullwidth-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.fullwidth-image-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.fullwidth-image-disclaimer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.fullwidth-image-disclaimer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .fullwidth-image-disclaimer {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 12px;
+  }
+}

@@ -47,7 +47,6 @@ max-width: 100%;
 .page-content h2 {
   font-size: 1.8rem;
   margin: 30px 0 20px 0;
-  color: #333;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
@@ -55,7 +54,7 @@ max-width: 100%;
 .page-content h3 {
   font-size: 1.4rem;
   margin: 30px 0 15px 0;
-  color: #555;
+
 }
 
 .page-content strong {

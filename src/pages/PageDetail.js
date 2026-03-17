@@ -5,15 +5,15 @@ import { useLiveQuery } from "@sanity/preview-kit";
 
 import { client } from "../sanityClient";
 
-import HeroSection from "./HeroSection";
-import FeaturesSection from "./FeaturesSection";
-import SplitImageSection from "./SplitImageSection";
-import TextSection from "./TextSection";
-import CTACardPanel from "./CTACardPanel";
-import ContactCallout from "./ContactCallout";
-import Spotlight from "./Spotlight";
+import HeroSection from "../components/HeroSection";
+import FeaturesSection from "../components/FeaturesSection";
+import SplitImageSection from "../components/SplitImageSection";
+import TextSection from "../components/TextSection";
+import CTACardPanel from "../components/CTACardPanel";
+import ContactCallout from "../components/ContactCallout";
+import Spotlight from "../components/Spotlight";
 
-import "../styles/PageDetail.css";
+import "./PageDetail.css";
 
 const pageQuery = `*[_type == "page" && slug.current == $slug][0]{
   _id,

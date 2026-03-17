@@ -1,0 +1,81 @@
+.html-block {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.html-block-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0b2c6b;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.html-block-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.html-block-content h1,
+.html-block-content h2,
+.html-block-content h3,
+.html-block-content h4,
+.html-block-content h5,
+.html-block-content h6 {
+  color: #0b2c6b;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.html-block-content p {
+  margin-bottom: 15px;
+}
+
+.html-block-content ul,
+.html-block-content ol {
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.html-block-content li {
+  margin-bottom: 5px;
+}
+
+.html-block-content blockquote {
+  border-left: 4px solid #0b2c6b;
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #666;
+}
+
+.html-block-content code {
+  background: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.html-block-content strong {
+  font-weight: 600;
+}
+
+.html-block-content em {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .html-block {
+    padding: 40px 20px;
+  }
+
+  .html-block-title {
+    font-size: 28px;
+  }
+
+  .html-block-content {
+    font-size: 16px;
+  }
+}
